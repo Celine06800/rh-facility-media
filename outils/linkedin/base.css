@@ -1,0 +1,30 @@
+/* Charte des visuels LinkedIn RH Facility : bordeaux, filet doré, Playfair Display (titres) et DM Sans (texte). */
+@font-face{font-family:PF;font-weight:600;src:url(fonts/playfair-display-latin-600-normal.woff2)}
+@font-face{font-family:PF;font-weight:700;src:url(fonts/playfair-display-latin-700-normal.woff2)}
+@font-face{font-family:DM;font-weight:400;src:url(fonts/dm-sans-latin-400-normal.woff2)}
+@font-face{font-family:DM;font-weight:500;src:url(fonts/dm-sans-latin-500-normal.woff2)}
+@font-face{font-family:DM;font-weight:700;src:url(fonts/dm-sans-latin-700-normal.woff2)}
+:root{--b1:#5C1522;--b2:#7B1E2E;--b3:#9a2236;--or:#c9a96e;--rose:#f7dfe2;--creme:#fbf7f4;--ink:#2a1216}
+html,body{margin:0;background:#ddd}
+.slide{position:relative;width:1080px;height:1350px;overflow:hidden;font-family:DM;box-sizing:border-box;padding:110px 96px}
+.fonce{background:linear-gradient(170deg,var(--b1),var(--b2) 60%,var(--b3));color:#fff}
+.clair{background:var(--creme);color:var(--ink)}
+.tag{display:inline-block;font-weight:700;font-size:28px;letter-spacing:.14em;text-transform:uppercase;color:var(--or)}
+.clair .tag{color:var(--b2)}
+h1{font-family:PF;font-weight:700;font-size:88px;line-height:1.08;margin:28px 0 0}
+h2{font-family:PF;font-weight:600;font-size:60px;line-height:1.15;margin:0}
+.filet{width:150px;height:6px;border-radius:3px;background:var(--or);margin:44px 0}
+p{font-size:38px;line-height:1.45;margin:0 0 22px}
+.fonce p{color:var(--rose)}
+ol,ul{margin:0;padding:0;list-style:none;counter-reset:n}
+li{position:relative;font-size:38px;line-height:1.35;padding:0 0 30px 92px}
+ol li:before{counter-increment:n;content:counter(n);position:absolute;left:0;top:-4px;width:62px;height:62px;border-radius:50%;background:var(--or);color:var(--b1);font-weight:700;font-size:34px;display:grid;place-items:center}
+ul li:before{content:"";position:absolute;left:20px;top:18px;width:18px;height:18px;border-radius:50%;background:var(--or)}
+.encart{background:rgba(255,255,255,.08);border:2px solid rgba(201,169,110,.55);border-radius:28px;padding:40px 44px}
+.clair .encart{background:#fff;border-color:#ead7da}
+.pied{position:absolute;left:96px;right:96px;bottom:84px;display:flex;align-items:center;justify-content:space-between;font-size:30px}
+.marque{display:flex;align-items:center;gap:18px;font-family:PF;font-weight:700;font-size:40px}
+.marque i{display:grid;place-items:center;width:64px;height:64px;border-radius:12px;background:var(--b2);color:#fff;font-style:normal;font-size:30px}
+.fonce .marque i{background:#fff;color:var(--b2)}
+.url{font-weight:700;color:var(--or)}
+.clair .url{color:var(--b2)}
